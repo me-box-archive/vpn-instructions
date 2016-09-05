@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Databox VPN/Proxy Instructions</title>
+		<script src="platform.js"></script>
+		<script type="text/javascript">
+			if (/android/i.test(platform.os.family))
+				window.location.href = 'andorid.html';
+			else if (/ios/i.test(platform.os.family))
+				window.location.href = 'ios.html';
+			else if (/os x/i.test(platform.os.family))
+				window.location.href = 'osx.html';
+			else if (/win/i.test(platform.os.family))
+				window.location.href = 'win.html';
+			else if (/(linux|ubuntu|debian|fedora|red hat|suse)/i.test(platform.os.family))
+				window.location.href = 'linux.html';
+			else
+				window.location.href = 'other.html';
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
